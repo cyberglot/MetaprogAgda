@@ -81,6 +81,7 @@
 \author{Conor McBride}
 \maketitle
 
+
 \section*{Introduction}
 
 If you have never met a metaprogram in a dependently typed programming
@@ -97,6 +98,9 @@ with enough dependent types. It would certainly be worth trying to
 repeat these experiments in Idris, or in Coq, or in Haskell, or in
 your own dependently typed language, or maybe one day in mine.
 
+\newpage
+
+\tableofcontents
 
 \chapter{Vectors and Normal Functors}
 
@@ -128,12 +132,12 @@ your own dependently typed language, or maybe one day in mine.
 %include OTT.lagda
 
 
-\chapter{Type Theory in Type Theory}
+% \chapter{Type Theory in Type Theory}
 
-%include TTinTT.lagda
+% %include TTinTT.lagda
 
 
-\chapter{Reflections and Directions}
+% \chapter{Reflections and Directions}
 
 \bibliographystyle{plainnat}
 \bibliography{notes.bib}
