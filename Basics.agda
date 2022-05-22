@@ -1,16 +1,6 @@
 module Basics where
 
-
-postulate
-      Level : Set
-      lzero  : Level
-      lsuc   : Level -> Level
-      lmax   : Level -> Level -> Level
-
-{-# BUILTIN LEVEL     Level #-}
-{-# BUILTIN LEVELZERO lzero  #-}
-{-# BUILTIN LEVELSUC  lsuc   #-}
-{-# BUILTIN LEVELMAX  lmax   #-}
+open import Agda.Primitive
 
 _o_ : forall {i j k}
         {A : Set i}{B : A -> Set j}{C : (a : A) -> B a -> Set k} ->
@@ -45,8 +35,6 @@ open One public
 data _==_ {l}{X : Set l}(x : X) : X -> Set l where
   refl : x == x
 infix 1 _==_
-{-# BUILTIN EQUALITY _==_ #-}
-{-# BUILTIN REFL refl #-}
 
 subst :  forall {k l}{X : Set k}{s t : X} ->
          s == t -> (P : X -> Set l) -> P s -> P t
